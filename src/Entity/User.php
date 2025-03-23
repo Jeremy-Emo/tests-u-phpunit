@@ -10,6 +10,8 @@ class User
     private ?string $accountNumber = null;
     private int $accountAmount = 0;
 
+    private ?string $lastMailSend = null;
+
     public function getFirstName(): string
     {
         return $this->firstName;
@@ -51,9 +53,21 @@ class User
         return $this->accountAmount;
     }
 
-    public function setAccountAmount(int $accountAmount): User
+    public function setAccountAmount(int $accountAmount): self
     {
         $this->accountAmount = $accountAmount;
+
+        return $this;
+    }
+
+    public function getLastMailSend(): ?string
+    {
+        return $this->lastMailSend;
+    }
+
+    public function setLastMailSend(?string $lastMailSend): User
+    {
+        $this->lastMailSend = $lastMailSend;
         return $this;
     }
 }
