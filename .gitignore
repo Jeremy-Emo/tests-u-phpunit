@@ -1,0 +1,9 @@
+.idea/
+coverage/
+vendor/
+tests/*
+!tests/.gitkeep
+tests/**/*
+.phpunit.result
+.phpunit.result.cache
+.phpunit.cache/

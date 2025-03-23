@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnFailure="false"
+         cacheDirectory=".phpunit.cache">
+
+    <!-- Définition des dossiers contenant les tests -->
+    <testsuites>
+        <testsuite name="UnitTests">
+            <directory suffix=".php">tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- Définition des dossiers contenant les sources -->
+    <source>
+        <include>
+            <directory>src</directory>
+        </include>
+    </source>
+
+    <!-- Et pour plus de customisation : https://docs.phpunit.de/en/12.0/configuration.html -->
+
+</phpunit>

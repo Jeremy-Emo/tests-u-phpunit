@@ -1,0 +1,19 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "coverage": "vendor/bin/phpunit --coverage-html coverage/"
+    },
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    }
+}
